@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+{% load staticfiles %}
+
+{% block extrahead %}
+    <script type='text/javascript' src='{% static "js/grid.js" %}'></script>
+{% endblock extrahead %}
+
+{% block content %}
+    {% include "grid.html" %}
+{% endblock content %}

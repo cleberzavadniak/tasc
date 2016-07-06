@@ -1,0 +1,35 @@
+{% load staticfiles %}
+<html>
+  <head>
+    <title>TASC</title>
+    <link rel="stylesheet" href='{% static "css/bootstrap.min.css" %}'>
+    <link rel="stylesheet" href='{% static "css/style.css" %}'>
+    <script type="text/javascript">
+        SITE_URL="http://localhost:8000/";
+    </script>
+    <script type="text/javascript"
+        src="http://code.jquery.com/jquery-2.2.4.min.js"
+        crossorigin="anonymous"></script>
+
+    {% block extrahead %}
+    {% endblock extrahead %}
+  </head>
+  <body>
+    <div class='body container'>
+      <div class='header'>
+      {% block header %}
+      {% endblock header %}
+      </div>
+
+      <div class='content'>
+      {% block content %}
+      {% endblock content %}
+      </div>
+
+      <div class='footer'>
+      {% block footer %}
+      {% endblock footer %}
+      </div>
+    </div>
+  </body>
+</html>

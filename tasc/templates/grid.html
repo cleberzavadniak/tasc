@@ -1,0 +1,10 @@
+<table class='grid'>
+  {% for i in "012345" %}
+  <tr class='grid'>
+    {% for j in "0123456789" %}
+      <td class='grid' id='grid-cell-{{ i }}x{{ j }}'>
+      </td>
+    {% endfor %}
+  </tr>
+  {% endfor %}
+</table>
